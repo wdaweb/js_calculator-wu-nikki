@@ -13,10 +13,19 @@
   <style>
     body {
       margin: 0;
-      width: 100vw;
-      height: 100vh;
       font-family: 'Audiowide', cursive;
       position: relative;
+
+
+    }
+
+    .box {
+      width: 100vw;
+      height: 100vh;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 200, 0.3)),
+        url(./天空.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
     }
 
     table {
@@ -41,41 +50,44 @@
 </head>
 
 <body>
-  <table border="1">
+  <div class="box">
+    <table border="1">
 
 
 
-    <tr>
-      <td colspan="4" id="text">0</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>/</td>
-      <td>*</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td rowspan="2">+</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td rowspan="2">=</td>
-    </tr>
-    <tr>
-      <td colspan="2">0</td>
-      <td>.</td>
-    </tr>
-  </table>
+      <tr>
+        <td colspan="4" id="text">0</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>/</td>
+        <td>*</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td rowspan="2">+</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td rowspan="2">=</td>
+      </tr>
+      <tr>
+        <td colspan="2">0</td>
+        <td>.</td>
+      </tr>
+    </table>
+  </div>
+
   <script>
     const text = document.getElementById('text')
     const btns = document.querySelectorAll('td:not(#text)')
